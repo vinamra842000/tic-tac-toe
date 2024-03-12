@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #368F8B;
+    height: 100vh;
+    font-family: "Madimi One", sans-serif;
+}
+
+h1{
+    margin-bottom: 1%;
+}
+
+.new-game{
+    margin-bottom: 1%;
+}
+
+.reset-game{
+    margin-top: 1%;
+}
+
+.btn-game{
+    font-family: "Madimi One", sans-serif;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 10px 10px;
+    box-shadow: 5px 5px 5px black;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #adadad;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.btn-game:hover{
+    box-shadow: 2px 2px 5px black;
+    /* box-shadow: none; */
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.game{
+    height: 69vh;
+    width: 70vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.box{
+    height: 21.5vh;
+    background-color: #F3DFC1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 20%;
+    box-shadow: 5px 5px 5px black;
+    font-size: 4rem;
+    color: #9900ff;
+    /* #B74F6F */
+    font-weight: 300;
+}
+
+
+#winning-line {
+    position: absolute;
+    z-index: 1; /* Ensure the line appears above the cells */
+    stroke: red; /* Set the color of the line */
+    stroke-width: 5px; /* Set the thickness of the line */
+}
+
+
